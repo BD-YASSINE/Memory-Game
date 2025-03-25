@@ -1,9 +1,9 @@
 const emojis = ["🍎", "🍌", "🍇", "🍓", "🍍", "🥑", "🍉", "🥕"];
-const cards = [...emojis, ...emojis]; // Duplicate for pairs
+const cards = [...emojis, ...emojis]; 
 let flippedCards = [];
 let matchedPairs = 0;
 
-// Shuffle cards
+
 cards.sort(() => Math.random() - 0.5);
 
 const gameBoard = document.getElementById("gameBoard");
@@ -20,7 +20,7 @@ cards.forEach((emoji, index) => {
 
     const back = document.createElement("div");
     back.classList.add("back");
-    back.textContent = emoji; // Show emoji only on the back side
+    back.textContent = emoji; 
 
     card.appendChild(front);
     card.appendChild(back);
